@@ -1,0 +1,597 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style:none;
+	font-family:sans-serif;
+	}
+	
+/*-------------------------------*/	
+/*-------------------------------*/	
+/*--CABEZOTE--*/
+	
+header{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:83px;
+	background:url(../img/cabezote.jpg);
+	}
+	
+#logo{
+	position:absolute;
+	top:17px;
+	left:15px;
+	width:188px;
+	height:47px;
+	}
+	
+/*--FIN CABEZOTE--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--BARRA DE NAVEGACIÓN--*/
+
+nav{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:45px;
+	border-bottom:1px solid #bcd1cb;
+	background:url(../img/nav.jpg);
+	}
+	
+nav ul{
+	position:absolute;
+	top:0;
+	left:0;
+	width:500px;
+	height:45px;
+	}
+	
+nav ul li{
+	float:left;
+	width:124px;
+	line-height:45px;
+	text-align:center;
+	font-size:14px;
+	color:white;
+	border-right:1px solid #bcd1cb;
+	}
+	
+/*--FIN BARRA DE NAVEGACIÓN--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--SLIDE--*/
+
+#slide{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:301px;
+	}
+	
+/*--FIN SLIDE--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--BOTONERA SLIDE--*/
+
+#botoneraSlide{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:26px;
+	background:url(../img/backBotonesSlide.jpg);
+	}
+	
+	#slide ul{
+		position: relative;
+		top:0;
+		left:0;
+		width:1000px;
+		height:301px;
+		background:url(../Img/slide01.jpg);
+	}
+	
+	#slide ul li img{
+		position:absolute;
+		opacity:0;
+		left:0;
+		transition:opacity 1s ease-out;
+	}
+	
+	#slide ul li label{
+		position:relative;
+		z-index:3;
+		top:304px;
+		left:440px;
+		float:left;
+		width:10px;
+		height:10px;
+		margin:0 2px;
+		background:blue;
+		border:3px solid white;
+		cursor:pointer;
+		border-radius:100%;
+	}
+	
+	#slide ul li label:hover{
+		background:#aaa;
+	}
+	
+	#slide ul li label:active{
+		background:magenta;
+	}
+	
+	#slide ul li input{
+		display:none;
+	}
+	
+	#slide ul li input#boton-1:checked ~ #foto1{
+		opacity:1;
+	}
+	
+	#slide ul li input#boton-2:checked ~ #foto2{
+		opacity:1;
+	}
+	
+	#slide ul li input#boton-3:checked ~ #foto3{
+		opacity:1;
+	}
+	
+	#slide ul li input#boton-4:checked ~ #foto4{
+		opacity:1;
+	}
+	
+	#slide ul li input#boton-5:checked ~ #foto5{
+		opacity:1;
+	}
+	
+/*--FIN BOTONERA SLIDE--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--SECTION INICIO--*/
+
+section#inicio{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:299px;
+	background:white;
+	}
+	
+section#inicio ul li{
+	float:left;
+	width:333px;
+	height:299px;
+	}
+	
+section#inicio ul li h1{
+	margin:23px 27px;
+	font-weight:100;
+	font-size:25px;
+	}
+	
+section#inicio ul li p{
+	margin:23px 28px;
+	font-size:15px;
+	}
+	
+section#inicio ul li img{
+	margin:1px 29px;
+	width:273px;
+	height:83px;
+	background:silver;	
+	}
+
+/*--FIN SECTION INICIO--*/
+/*-------------------------------*/	
+/*-------------------------------*/	
+/*--SECTION QUIENES SOMOS--*/
+
+section#quienesSomos{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:299px;
+	/*background:url(../img/quienesSomos.jpg);*/
+	background:white;
+	}
+
+section#quienesSomos h1{
+	position:relative;
+	top:15px;
+	left:27px;
+	color:#1f1d21;
+	font-weight:100;
+	}
+	
+section#quienesSomos hr{
+	position:relative;
+	top:20px;
+	width:950px;
+	margin:auto;
+	border:1px solid #c6c6c6c6;
+	}
+
+section#quienesSomos p{
+	position:relative;
+	top:40px;
+	width:950px;
+	margin:auto;
+	color:#414042;
+	text-align:justify;
+	}
+	
+section#quienesSomos img{
+	float:left;
+	width:272px;
+	margin-right:20px;
+	margin-bottom:20px;
+	}
+	
+/*--FIN SECTION QUIENES SOMOS--*/
+/*-------------------------------*/	
+/*-------------------------------*/	
+/*--SECTION SERVICIOS--*/
+
+section#servicios{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 299px;
+    background: white;
+}
+
+section#servicios ul#cajaServicios{
+    position: relative;
+    width: 935px;
+    margin: auto;
+    top: 18px;
+    height: 262px;
+    background: white;
+    box-shadow: 0px 0px 30px #222;
+}
+section#servicios ul#cajaServicios li div{
+    position: absolute;
+    opacity: 0;
+    right: 20px;
+    top: 22px;
+    transition: all .2s ease-out;
+    -webkit-transition:all .2s ease-out;
+    -moz-transition:all .2s ease-out;
+}
+
+section#servicios ul#cajaServicios li div#servicios00{
+    opacity: 1;
+}
+
+section#servicios ul#cajaServicios li div h1{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-weight: 100;
+}
+
+section#servicios ul#cajaServicios li div p{
+    position: absolute;
+    z-index: 1;
+    bottom: 4px;
+    background: rgba(0, 0, 0, .4);
+    color: white;
+    width: 97.2%;
+    line-height: 60px;
+    padding-left: 20px;
+}
+
+section#servicios ul#cajaServicios li label{
+    position: relative;
+    z-index: 3;
+    width: 151px;
+    height: 72px;
+    top: 22px;
+    left: 15px;
+    margin: 2px 0;
+    cursor: pointer;
+}
+
+section#servicios ul#cajaServicios li input{
+    display: none;
+} 
+
+input#btn01:checked ~ #servicios01{
+    opacity: 1;
+    z-index: 1;
+}
+
+input#btn02:checked ~ #servicios02{
+    opacity: 1;
+    z-index: 1;
+}
+
+input#btn03:checked ~ #servicios03{
+    opacity: 1;
+    z-index: 1;
+}
+	
+	
+/*--FIN SECTION SERVICIOS--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--SECTION CONTACTENOS--*/
+
+section#contactenos{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:299px;
+	background:white;
+	}
+	
+section#contactenos form{	
+	position:relative;
+	margin:auto;
+	top:32px;
+	width:910px;
+	height:232px;
+	background:white;
+	}
+
+section#contactenos form input#nombre{
+	position:absolute;
+	padding:10px;
+	width:272px;
+	height:45px;
+	background:#dce9d7;
+	border:0;
+	}
+	
+section#contactenos form input#email{
+	position:absolute;
+	top:81px;
+	padding:10px;
+	width:272px;
+	height:45px;
+	background:#dce9d7;
+	border:0;
+	}
+	
+section#contactenos form input#asunto{
+	position:absolute;
+	bottom:0px;
+	padding:10px;
+	width:272px;
+	height:45px;
+	background:#dce9d7;
+	border:0;
+	}
+	
+section#contactenos form #mensaje{
+	position:absolute;
+	right:0px;
+	padding:10px;
+	width:581px;
+	height:128px;
+	background:#dce9d7;
+	border:0;
+	}
+	
+section#contactenos form input#enviar{
+	position:absolute;
+	bottom:0px;
+	right:0;
+	padding:10px;
+	width:604px;
+	height:69px;
+	background:#1a1d20;
+	border:0;
+	color:white;
+	}
+
+	
+	
+/*--FIN SECTION CONTACTENOS--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--BOTTOM--*/
+
+#bottom{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:190px;
+	background:url(../img/backBottom.jpg);
+	}
+	
+#bottom ul li{
+	float:left;
+	width:250px;
+	height:190px;
+	}
+	
+#bottom ul li h1{
+	margin:13px 18px;
+	color:white;
+	font-size:18px;
+	font-weight:100;
+	}
+	
+#bottom ul li ol{
+	position:relative;
+	top:15px;
+	left:17px;
+	width:190px;
+	height:80px;
+	background:rgbsa(255,0,0,.5);
+	}
+	
+#bottom ul li ol li{
+	height:20px;
+	text-align:left;
+	list-style:inside;
+	font-size:15px;
+	color:white;
+	list-style-image:url(../img/list.png);
+	}
+	
+#bottom ul li img{
+	position:relative;
+	top:15px;
+	left:15px;
+	width:95px;
+	height:95px;
+	border:4px solid white;
+	background:url(../img/imgGaleria.jpg);
+	background-size:cover;
+	}
+	
+#bottom ul li ul{
+	position:relative;
+	top:11px;
+	left:15px;
+	width:200px;
+	height:40px;
+	}
+	
+#bottom ul li ul li{
+	float:left;
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	background:white;
+	margin:5px;
+	}
+	
+#bottom ul li ul li:first-child{
+	background:url(../img/facebook.jpg);
+	background-size:cover;
+	}
+	
+#bottom ul li ul li:nth-child(2){
+	background:url(../img/iconoGoogle.jpg);
+	background-size:cover;
+	}
+	
+#bottom ul li ul li:nth-child(3){
+	background:url(../img/iconoPinterest.jpg);
+	background-size:cover;
+	}
+	
+#bottom ul li ul li:last-child{
+	background:url(../img/iconoTwitter.jpg);
+	background-size:cover;
+	}
+	
+#bottom ul li ul li a{
+	float:left;
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	}
+/*--FIN BOTTOM--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--FOOTER--*/
+
+footer{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:62px;
+	text-align:center;
+	color:white;
+	line-height:62px;
+	font-size:15px;
+	background:black;
+	}
+
+
+@keyframes mianimacion {
+    0%{
+        opacity: 1;
+    }
+
+    20%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes mianimacion{
+    0%{
+        left: 0%;
+    }
+
+    50%{
+        left: 100%;
+    }
+
+    100%{
+        left: 0%;
+    }
+}
+
+@-moz-keyframes mianimacion{
+    0%{
+        left: 0%;
+    }
+
+    50%{
+        left: 100%;
+    }
+
+    100%{
+        left: 0%;
+    }
+}
+#fondo1{
+    position: absolute;
+    width: 100%;
+    height: 163%;
+    background: url(../Img/background4.jpg);
+    animation: mianimacion 24s linear 18s infinite;
+    -webkit-animation: mianimacion 24s linear 18s infinite;
+    -moz-animation: mianimacion 24s linear 18s infinite;
+}
+
+#fondo2{
+    position: absolute;
+    width: 100%;
+    height: 163%;
+    background: url(../Img/background2.jpg);
+    background-size: cover;
+    animation: mianimacion 24s linear 12s infinite;
+    -webkit-animation: mianimacion 24s linear 12s infinite;
+    -moz-animation: mianimacion 24s linear 12s infinite;
+}
+
+#fondo3{
+    position: absolute;
+    width: 100%;
+    height: 163%;
+    background: url(../Img/background3.jpg);
+    background-size: cover;
+    animation: mianimacion 24s linear 6s infinite;
+    -webkit-animation: mianimacion 24s linear 6s infinite;
+    -moz-animation: mianimacion 24s linear 6s infinite;
+}
+#fondo4{
+    position: absolute;
+    width: 100%;
+    height: 163%;
+    background: url(../Img/background.jpg);
+    animation: mianimacion 24s linear 0s infinite;
+    -webkit-animation: mianimacion 24s linear 0s infinite;
+    -moz-animation: mianimacion 24s linear 0s infinite;
+}
+

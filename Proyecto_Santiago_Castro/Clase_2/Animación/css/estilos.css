@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Cuando queremos trabajar animaciones en css, utilizamos una propiedad
+llamada @keyframes, seguido del nombre de la animación*/
+@keyframes mianimacion{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@-webkit-keyframes mianimacion{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@-moz-keyframes mianimacion{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+/*Colocamos el fondo en toda la pantalla*/
+#fondo1{
+    position: absolute;
+    width: 100%;
+    height: 100%; /*si no te sirve el porcentaje, debes colocar vh*/
+    background: url(../img/background.jpg);
+    animation: mianimacion 24s linear 18s infinite;
+    -webkit-animation: mianimacion 24s linear 18s infinite;
+    -moz-animation: mianimacion 24s linear 18s infinite;
+}
+
+/*Vamos a colocar la segunda imagen, note que esta ultima tambien ocupa
+toda la pantalla, pero como esta es la segunda que colocamos en el orden como está,
+entonces aparece esta y no la anterior*/
+#fondo2{
+    position: absolute;
+    width: 100%;
+    height: 100vh; /*si no te sirve el porcentaje, debes colocar vh*/    
+    background: url(../img/background2.jpg);
+    background-size: cover; /*Ajusta la imagen completa a la pantalla en la que estas trabajando*/
+    animation: mianimacion 24s linear 12s infinite;
+    -webkit-animation: mianimacion 24s linear 12s infinite;
+    -moz-animation: mianimacion 24s linear 12s infinite;
+}
+
+#fondo3{
+    position: absolute;
+    width: 100%;
+    height: 100vh; /*si no te sirve el porcentaje, debes colocar vh*/    
+    background: url(../img/background3.jpg);
+    background-size: cover; /*Ajusta la imagen completa a la pantalla en la que estas trabajando*/
+    animation: mianimacion 24s linear 6s infinite;
+    -webkit-animation: mianimacion 24s linear 6s infinite;
+    -moz-animation: mianimacion 24s linear 6s infinite;
+}
+
+#fondo4{
+    position: absolute;
+    width: 100%;
+    height: 100%; /*si no te sirve el porcentaje, debes colocar vh*/
+    background: url(../img/background.jpg);
+    animation: mianimacion 24s linear 0s infinite;
+    -webkit-animation: mianimacion 24s linear 0s infinite;
+    -moz-animation: mianimacion 24s linear 0s infinite;
+}
